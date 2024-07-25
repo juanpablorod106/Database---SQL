@@ -88,7 +88,7 @@
  1.4 Suppose you want to build a video site similar to YouTube. Consider each of the
  points listed in Section 1.2 as disadvantages of keeping data in a file-processing
  system. Discuss the relevance of each of these points to the storage of actual
- video data, and to metadataabout thevideo,suchastitle,the user whouploaded
+ video data, and to metadata about the video,such as title,the user who uploaded
  it, tags, and which users viewed it.
 
  1.5 Keyword queries used in web search are quite different from database queries.

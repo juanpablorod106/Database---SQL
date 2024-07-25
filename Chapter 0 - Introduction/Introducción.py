@@ -1,5 +1,5 @@
                                                                                     Introducción
-                                                                        #Términos de repaso - Capitulo 1
+                                                                        #Términos de repaso - Capitulo 0
 ² Sistema gestor de bases de datos (SGBD).
 ² Aplicaciones de sistemas de bases de datos.
 ² Sistemas de archivos.
@@ -55,7 +55,7 @@ objetos.
 ² Arquitectura de Aplicación a Base de Datos.
     Dos Niveles, Tres Niveles, Servidor de Aplicaciones.
 ² Máquinas cliente y servidor.
-                                                                        #Ejercicios prácticos - Capitulo 1
+                                                                        #Ejercicios prácticos - Capitulo 0
 
 1.1 En este capítulo se han descrito varias ventajas importantes de los sistemas gestores de bases de
 datos. ¿Cuáles son sus dos inconvenientes?
@@ -70,7 +70,7 @@ empresa dada.
 programación preferido del lector. Usando el array como ejemplo, ilústrese la diferencia (a) entre
 los tres niveles de abstracción de datos y (b) entre el esquema y los ejemplares.
 
-                                                                            #Ejercicios - Capitulo 1
+                                                                            #Ejercicios - Capitulo 0
                                                                             
 1.5 Indíquense cuatro aplicaciones que se hayan usado que sea muy posible que utilicen un sistema de
 bases de datos para almacenar datos persistentes.

@@ -1,0 +1,36 @@
+Tabla Partido:
+
+1. ¿Cuántos partidos se jugaron en el Estadio Mineirão?
+SELECT COUNT(*) as partidos_maracana FROM Partido WHERE Lugar = 'Maracanã, Río de Janeiro';
+
+2. ¿Cuáles son los árbitros que han arbitrado más partidos?
+SELECT Arbitro, COUNT(*) AS PartidosArbitrados FROM Partido GROUP BY Arbitro ORDER BY PartidosArbitrados DESC LIMIT 1;
+
+
+3. ¿Cuáles son los equipos que llegaron a más finales?
+SELECT DISTINCT EqLocal AS Equipo FROM Partido WHERE Instancia = 'Semifinal'
+UNION
+SELECT DISTINCT EqVisitante AS Equipo FROM Partido WHERE Instancia = 'Semifinal';
+
+---------------------------------------------------------------------------------------------------------------------------
+Tabla Equipo:
+
+4. ¿Ver nombre de dt y nombre de equipo técnico por medio del Nombre de cualquier selección?
+SELECT NombreDT, NombreEqTecnico FROM Equipo WHERE NombreSeleccion = 'Alemania';
+
+5. Subconsulta de la tabla equipo?
+
+Mostrar datos de jugadores por nacionalidades.
+SELECT Jugador.NyAp, Jugador.Posicion, Jugador.NroCamiseta
+FROM Jugador
+INNER JOIN Equipo ON Jugador.Seleccion = Equipo.NombreSeleccion
+WHERE Equipo.NombreSeleccion = 'Brasil';
+
+6. ¿Para ver lugar de entrenamiento de diferentes jugadores?
+SELECT Equipo.NombreSeleccion, Equipo.LugarEntrenamiento, Jugador.NyAp
+FROM Jugador
+INNER JOIN Equipo ON Jugador.Seleccion = Equipo.NombreSeleccion
+WHERE Jugador.NroCamiseta = 7;
+
+7. ¿Mostrar la matricula de una selección?
+SELECT NroCamiseta, NyAp from Jugador WHERE Seleccion = 'Argentina' ORDER BY NroCamiseta ASC

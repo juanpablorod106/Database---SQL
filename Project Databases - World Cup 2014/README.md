@@ -1,5 +1,7 @@
-# World Cup 2014 - Database
-Project
+# World Cup 2014 - Database Project
+Project for the subject of Database Systems.
+The following Database visualization interface was used to create the diagram.
+
 <h1 align="center">
   <a href="https://chartdb.io#gh-light-mode-only">
     <img src="https://github.com/chartdb/chartdb/blob/main/src/assets/logo-light.png" width="400" height="70" alt="ChartDB">
@@ -44,11 +46,9 @@ Project
   <img width='700px' src="./public/chartdb.png">
 </p>
 
-Project for the subject of Database Systems.
-The following Database visualization interface was used to create the diagram.
 It can be used by simply inserting this script into the query field of your databases.
 
-WITH fk_info as (
+"` WITH fk_info as (
 (SELECT (@fk_info:=NULL),
     (SELECT (0)
     FROM (SELECT kcu.table_schema,
@@ -185,3 +185,4 @@ WITH fk_info as (
             '], "database_name": "', DATABASE(),
             '", "version": "', VERSION(), '"}') AS CHAR) AS metadata_json_to_import
  FROM fk_info, pk_info, cols, indexes, tbls, views);
+ `"

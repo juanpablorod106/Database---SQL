@@ -42,10 +42,6 @@ The following Database visualization interface was used to create the diagram.
 
 ---
 
-<p align="center">
-  <img width='700px' src="./public/chartdb.png">
-</p>
-
 It can be used by simply inserting this script into the query field of your databases.
 
 "` WITH fk_info as (

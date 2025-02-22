@@ -1,0 +1,11 @@
+CustomerID	CustomerName					ContactName		Address					City			PostalCode	Country	
+1		Alfred Futterkiste				Maria Anders	Obere Str. 57				Berlin		12209		Germany
+2		Ana Trujillo Emparedados y Helados		Ana Trujillo	Avda. de la Constitucion 2222		Mexico D.F.		05021		Mexico	
+3		Antonio Moreno					Antonio Moreno	Mataderos2312				Mexico D.F.		05023		Mexico
+
+
+OrderID	CustomerID	EmployeeID	Order_Date	ShipperID
+10308		1		7		1996-09-18	3
+10309		2		3		1996-09-19	1
+10310		3		8		1996-09-20	2
+
